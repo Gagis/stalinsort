@@ -42,8 +42,8 @@ def stalinsort(iterable, key=None, ascending=False):
         keys = list(iterable)
 
     survivors = iterable[:1] # I prefer to think in terms of survivors.
-    for victim in keys[1:]:
-        if  survivors[-1] >= victim:
+    for index, victim in enumerate(iterable[1:]):
+        if  survivors[-1] >= keys[index + 1]:
             survivors.append(victim)
             
     return survivors
