@@ -45,8 +45,5 @@ def stalinsort(iterable, key=None, ascending=False):
     for victim in keys[1:]:
         if  survivors[-1] >= victim:
             survivors.append(victim)
-    
-    if ascending is True:
-        return reversed(survivors)
-    else:
-        return survivors
+            
+    return survivors
