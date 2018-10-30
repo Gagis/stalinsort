@@ -29,8 +29,8 @@ def stalinsort(iterable, key=None, ascending=False):
     Example
     -------
     >>>from stalinsort import stalinsort
-    >>>list = [3, 2, 5, 7, 1, 3]
-    >>>stalinsort(list)
+    >>>a = [3, 2, 5, 7, 1, 3]
+    >>>stalinsort(a)
     [3, 2, 1]
     """
 
